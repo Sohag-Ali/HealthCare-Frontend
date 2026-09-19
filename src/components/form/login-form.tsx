@@ -19,6 +19,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { toast } from "../ui/toast";
 import { Spinner } from "../ui/spinner";
+import GoogleLoginComponent from "../modules/google-login/GoogleLogin";
 
 
 export default function LoginForm() {
