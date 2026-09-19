@@ -14,11 +14,12 @@ import {
   FieldSeparator,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import GoogleLoginComponent from "../modules/google-login/GoogleLogin";
+
 import { patientRegistrationSchema } from "@/validation";
 import z from "zod";
 import { useRegistration } from "@/hooks";
 import { toast } from "../ui/toast";
+import GoogleLoginComponent from "../modules/google-login/GoogleLogin";
 
 export function RegisterForm() {
   const router = useRouter();
@@ -28,11 +29,11 @@ export function RegisterForm() {
   type PatientDefaultValues = z.infer<typeof patientRegistrationSchema>;
 
   const defaultValues: PatientDefaultValues = {
-    name: "Mir",
-    email: "mir@gmail.com",
-    contactNumber: "0191234567",
-    password: "@User123456",
-    confirmPassword: "@User123456",
+    name: "sohag",
+    email: "sohag.ali.dev@gmail.com",
+    contactNumber: "01728918054",
+    password: "Sohag@123456",
+    confirmPassword: "Sohag@123456",
   };
 
   const { mutate: registration } = useRegistration();
